@@ -1,0 +1,183 @@
+import {StyleSheet} from 'react-native';
+import {colors} from 'react-native-swiper-flatlist/src/themes';
+import Colors from '../../assets/colors/Colors';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from '../../assets/sizes/Sizes';
+
+export const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+    backgroundColor: Colors.white,
+  },
+  container: {
+    flex: 1,
+    padding: wp(5.5),
+  },
+  subSContainer: {
+    // width: wp(40),
+    // paddingLeft: 40,
+    // paddingRight: 40,
+    paddingHorizontal: wp(7),
+    backgroundColor: '#F2F5FC',
+    borderRadius: 20,
+    padding: 10,
+    margin: 10,
+  },
+  primaryView: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    width: wp(90),
+    alignSelf: 'center',
+  },
+  secondaryView: {
+    width: wp(90),
+    alignSelf: 'center',
+    marginTop: hp(2),
+  },
+  petNameText: {
+    fontSize: hp(2.3),
+    fontWeight: '700',
+    lineHeight: hp(3),
+    marginVertical: 2,
+    color: Colors.lightGrey,
+  },
+  petNameSubText: {
+    fontSize: hp(2.3),
+    fontWeight: '300',
+    lineHeight: hp(3),
+    marginRight: hp(3),
+    color: Colors.lightGrey,
+  },
+  buyPetText: {
+    fontSize: hp(1.8),
+    marginTop: hp(1),
+    fontWeight: '700',
+    alignItems: 'center',
+    alignSelf: 'center',
+    color: Colors.lightGrey,
+  },
+  activateText: {
+    fontSize: hp(2.3),
+    fontWeight: '700',
+    lineHeight: hp(3),
+  },
+  subActivationText: {
+    fontSize: wp(4),
+    fontWeight: '400',
+    lineHeight: hp(3),
+    marginTop: hp(1.5),
+    color: Colors.lightGrey,
+    textAlign: 'center',
+    alignSelf: 'center',
+  },
+  subContainer: {
+    alignItems: 'center',
+    width: wp(75),
+    alignSelf: 'center',
+    padding: hp(2),
+  },
+  roundImage: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    alignSelf: 'center',
+    marginTop: -60,
+    borderWidth: 2,
+    borderColor: Colors.white,
+  },
+  textContainer: {
+    marginTop: 20,
+    alignItems: 'center',
+  },
+  subText: {
+    fontSize: wp(4),
+    fontWeight: '400',
+    lineHeight: hp(3),
+  },
+  outerContainer: {
+    marginTop: hp(5),
+    width: wp(100),
+    alignSelf: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 10,
+  },
+  innerImageContainer: {
+    position: 'absolute',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    width: 60,
+    height: 60,
+    top: -30,
+  },
+  innerImage: {
+    width: 40,
+    height: 40,
+    borderRadius: 25,
+    alignSelf: 'center',
+  },
+  cameraStyle: {
+    height: hp(93),
+  },
+  NFCImagecontainer: {
+    marginTop: hp(5),
+    alignItems: 'center',
+  },
+  imageStyle: {
+    width: wp(80),
+    height: hp(50),
+  },
+  textView: {
+    // padding: 20,
+    backgroundColor: Colors.white,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10,
+    width: wp(90),
+    alignSelf: 'center',
+  },
+  stepText: {
+    fontSize: wp(4),
+    fontWeight: 'normal',
+    lineHeight: hp(2),
+    marginBottom: hp(1),
+    color: Colors.black,
+  },
+  boldText: {
+    fontSize: wp(4.5),
+    fontWeight: '500',
+    lineHeight: hp(3),
+  },
+  imageContainer: {
+    height: hp(20),
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: Colors.grey_bg,
+    borderRadius: hp(1),
+  },
+  headingText: {
+    fontSize: hp(3.4),
+    fontWeight: '700',
+    textAlign: 'center',
+    marginTop: hp(3),
+    marginBottom: hp(2),
+  },
+  descriptionText: {
+    fontSize: hp(2),
+    fontWeight: '300',
+    textAlign: 'center',
+    lineHeight: hp(3),
+    marginHorizontal: wp(3),
+  },
+  italicStyle: {
+    fontSize: hp(1.5),
+    fontWeight: '300',
+    textAlign: 'center',
+    lineHeight: hp(3),
+    fontStyle: 'italic',
+    color: Colors.lightGrey,
+  },
+});

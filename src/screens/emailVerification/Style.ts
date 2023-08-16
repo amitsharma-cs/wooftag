@@ -1,0 +1,90 @@
+import {StyleSheet} from 'react-native';
+import {
+  heightPercentageToDP as hp,
+  widthPercentageToDP as wp,
+} from '../../assets/sizes/Sizes';
+import Colors from '../../assets/colors/Colors';
+
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: Colors.white,
+  },
+  containerView: {
+    width: wp(90),
+    marginTop: hp(3),
+    alignSelf: 'center',
+  },
+  emailVerificationText: {
+    paddingTop: hp(2),
+    fontWeight: '700',
+    fontSize: 32,
+    color: Colors.black,
+  },
+  emailTextHeading: {
+    marginTop: hp(1),
+    lineHeight: 24,
+    fontWeight: '400',
+    fontSize: 15,
+    color: Colors.black,
+  },
+  emailSecondTextHeading: {
+    // marginTop: hp(1),
+    lineHeight: 24,
+    fontWeight: '600',
+    fontSize: 17,
+    color: Colors.black,
+  },
+  codeFieldRoot: {marginTop: 20, alignSelf: 'center'},
+  cell: {
+    width: hp(8),
+    height: hp(8),
+    lineHeight: 40,
+    fontSize: 24,
+    textAlign: 'center',
+    overflow: 'hidden',
+    margin: 8,
+    borderRadius: 12,
+    borderWidth: 10,
+    borderColor: Colors.light_grey,
+    backgroundColor: Colors.white,
+    color: Colors.black,
+    alignItems: 'center',
+    padding: hp(1.5),
+    justifyContent: 'center',
+  },
+  errorCell: {
+    width: hp(5.5),
+    height: hp(5.5),
+    lineHeight: 40,
+    fontSize: 24,
+    textAlign: 'center',
+    overflow: 'hidden',
+    margin: 8,
+    borderRadius: 12,
+    borderWidth: 10,
+    borderColor: Colors.light_grey,
+    backgroundColor: Colors.white,
+    color: Colors.red,
+    alignItems: 'center',
+    padding: hp(0.4),
+    justifyContent: 'center',
+  },
+  focusCell: {
+    borderColor: Colors.black,
+    borderWidth: 1,
+    color: Colors.light_grey,
+    borderRadius: 12,
+  },
+  text: {
+    textAlign: 'center',
+    marginTop: hp(2),
+    color: Colors.black,
+    fontSize: hp(1.5),
+    fontWeight: '600',
+  },
+  error: {
+    color: 'red',
+    alignSelf: 'center',
+  },
+});
